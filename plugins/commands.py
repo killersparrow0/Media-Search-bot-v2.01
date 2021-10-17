@@ -196,7 +196,7 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('🔔 Join 🔔", url='https://t.me/joinchat/f_m9r8SsXYUyZTNl'),
+            InlineKeyboardButton('🔔 Join 🔔', url='https://t.me/joinchat/f_m9r8SsXYUyZTNl'),
             InlineKeyboardButton('⚜️ Movie Request group ⚜️ ', url='https://t.me/movie_ott')
         ]
         ]
