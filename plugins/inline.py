@@ -16,7 +16,7 @@ async def answer(bot, query):
     if AUTH_CHANNEL and not await is_subscribed(bot, query):
         await query.answer(results=[],
                            cache_time=0,
-                           switch_pm_text='Because of overload to server admin resisted this bot to use only to subscribers so you have to subscribe my channel to use the bot',
+                           switch_pm_text='Because of overload to server admin resisted this bot to use only to subscribers so you have to subscribe my channel to use me',
                            switch_pm_parameter="subscribe")
         return
 
@@ -91,7 +91,7 @@ def get_reply_markup(query):
     buttons = [
         [
             InlineKeyboardButton('Search again', switch_inline_query_current_chat=query),
-            InlineKeyboardButton('More Bots', url='https://t.me/joinchat/vcOhk8tX214zNGQ1')
+            InlineKeyboardButton('🔰Join🔰', url='https://t.me/movie_ott')
         ]
         ]
     return InlineKeyboardMarkup(buttons)
