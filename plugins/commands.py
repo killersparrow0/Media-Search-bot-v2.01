@@ -197,20 +197,20 @@ async def bot_info(bot, message):
     buttons = [
         [
             InlineKeyboardButton('🔔 Join 🔔', url='https://t.me/joinchat/f_m9r8SsXYUyZTNl'),
-            InlineKeyboardButton('⚜️ Movie Request group ⚜️ ', url='https://t.me/movie_ott')
+            InlineKeyboardButton('⚜️ Movie group ⚜️ ', url='https://t.me/movie_ott')
         ]
         ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/elonmuskme'>꧁Jerry<\>★࿐</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://t.me/joinchat/f_m9r8SsXYUyZTNl'>Click here</a>\nMovie Group : <a href='https://t.me/movie_ott'>𝙹𝙾𝙸𝙽 𝙽𝙾𝚆</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Developer : <a href='https://t.me/elonmuskme'> Jerry </a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://t.me/joinchat/f_m9r8SsXYUyZTNl'>Click here</a>\nMovie Group : <a href='https://t.me/movie_ott'>JOIN NOW</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 @Client.on_message(filters.command('help'))
 async def bot_info(bot, message):
     buttons = [
         [
             InlineKeyboardButton('🔔 Join 🔔', url='https://t.me/joinchat/f_m9r8SsXYUyZTNl'),
-            InlineKeyboardButton('⚜️ Movie Request group ⚜️ ', url='https://t.me/movie_ott')
+            InlineKeyboardButton('⚜️ Movie group ⚜️ ', url='https://t.me/movie_ott')
         ]
         ]
-    await message.reply(text="<b>If You Have Any Doubts And If Any Errors In Codes Or Bugs Inform Us On Our Support Group ❗️\n Use Below Buttons To Get Support Group / Update channel Links </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>This is Adv auto filter bot you can also call me as Meenu. I can send you movie files, Just send me the name correctly, use www.google.com to get the correct spelling❗️\n Use Below Buttons To Get Movie Group / Update channel Links </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 @Client.on_message(filters.command('info') & (filters.private | filters.group))
 async def showinfo(client, message):
