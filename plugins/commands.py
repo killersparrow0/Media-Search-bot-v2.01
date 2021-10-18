@@ -27,11 +27,11 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="**Because of high traffic in server my owner limited only for the Subscribers ,Please Join My Channel to use me !**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                                InlineKeyboardButton(" Join Channel", url=invite_link.invite_link)
                             ],
                             [
                                 InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
@@ -66,8 +66,8 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('📺 𝗦𝗘𝗔𝗥𝗖𝗛 𝗛𝗘𝗥𝗘 🔍', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('💌 Join 💌', url='https://t.me/movie_ott')
+                        InlineKeyboardButton('📺 search here 🔍', switch_inline_query_current_chat=''),
+                        InlineKeyboardButton('⚜ Join ⚜', url='https://t.me/movie_ott')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -270,8 +270,8 @@ async def showinfo(client, message):
         f"<b>Name</b> : {name}\n"
         f"<b>UserID</b> : <code>{id}</code>\n"
         f"<b>Username Name</b> : {user_name}\n"
-        f"<b>Permanant USER Link</b> : <a href='tg://user?id={id}'>Link ❗️</a>\n\n"
-        f"<b>@malayalammoviesmms</b>",
+        f"<b>Permanant USER </b> : <a href='tg://user?id={id}'> Click here </a>\n\n"
+        f"<b>⚜JOIN NOW⚜ @movie_ott </b>",
         quote=True,
         parse_mode="html"
     )
